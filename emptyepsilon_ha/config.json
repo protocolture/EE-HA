@@ -1,8 +1,8 @@
 {
-  "name": "EmptyEpsilon Status Monitor",
+  "name": "EmptyEpsilon HA Plugin",
   "version": "0.1.0",
-  "slug": "emptyepsilon_status",
-  "description": "Poll EE and expose status to HA",
+  "slug": "emptyepsilon_ha",
+  "description": "Poll EmptyEpsilon and expose status to Home Assistant",
   "startup": "application",
   "boot": "auto",
   "init": false,
@@ -11,10 +11,10 @@
   "homeassistant_api": false,
   "apparmor": true,
   "options": {
-    "host": "192.168.1.50",
-    "port": 8080,
-    "poll_interval": 0.5,
-    "ship_name": "TSN-Blackstone"
+  "host": null,
+  "port": null,
+  "poll_interval": null,
+  "ship_name": null
   },
   "schema": {
     "host": "str",
@@ -22,5 +22,5 @@
     "poll_interval": "float",
     "ship_name": "str"
   },
-  "image": "ghcr.io/protocolture/ee-ha:latest"
+  "image": "ghcr.io/protocolture/emptyepsilon_ha:latest"
 }
