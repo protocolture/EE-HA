@@ -22,5 +22,5 @@
     "poll_interval": "float",
     "ship_name": "str"
   },
-  "image": "ghcr.io/protocolture/emptyepsilon_ha:latest"
+  "image": "ghcr.io/protocolture/ee-ha:latest"
 }
