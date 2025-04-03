@@ -1,0 +1,26 @@
+{
+  "name": "EmptyEpsilon Status Monitor",
+  "version": "0.1.0",
+  "slug": "emptyepsilon_status",
+  "description": "Poll EE and expose status to HA",
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "hassio_api": false,
+  "hassio_role": "default",
+  "homeassistant_api": false,
+  "apparmor": true,
+  "options": {
+    "host": "192.168.1.50",
+    "port": 8080,
+    "poll_interval": 0.5,
+    "ship_name": "TSN-Blackstone"
+  },
+  "schema": {
+    "host": "str",
+    "port": "int",
+    "poll_interval": "float",
+    "ship_name": "str"
+  },
+  "image": "ghcr.io/protocolture/ee-ha:latest"
+}
